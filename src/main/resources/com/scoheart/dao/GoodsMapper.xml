@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.scoheart.dao.GoodsMapper">
+
+  <resultMap id="GoodsRM" type="Goods">
+    <id column="goods_id" property="goodsId"/>
+    <result property="goodsName" column="goods_name"/>
+    <result property="goodsIntro" column="goods_intro"/>
+    <result property="goodsPrice" column="goods_price"/>
+    <result property="goodsClass" column="goods_class"/>
+    <result property="goodsInventory" column="goods_inventory"/>
+  </resultMap>
+
+  <select id="queryAllGoods" resultMap="GoodsRM">
+    select * from tb_goods;
+  </select>
+</mapper>
