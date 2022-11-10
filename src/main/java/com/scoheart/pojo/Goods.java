@@ -17,6 +17,15 @@ public class Goods {
  private  Double   goodsPrice;
  private  String   goodsClass;
  private  Integer   goodsInventory;
+ private  String goodsImage;
+
+    public String getGoodsImage() {
+        return goodsImage;
+    }
+
+    public void setGoodsImage(String goodsImage) {
+        this.goodsImage = goodsImage;
+    }
 
     public Integer getGoodsId() {
         return goodsId;
@@ -75,6 +84,7 @@ public class Goods {
                 ", goodsPrice=" + goodsPrice +
                 ", goodsClass='" + goodsClass + '\'' +
                 ", goodsInventory=" + goodsInventory +
+                ", goodsImage='" + goodsImage + '\'' +
                 '}';
     }
 }

@@ -44,18 +44,7 @@
                     </div>
                     <h1> &nbsp;&nbsp;&nbsp;&nbsp;猜你喜欢</h1>
                     <div id="recommend-items" class="recommend-items">
-                        <div class="card">
-                            <a href="https://www.baidu.com/" class="items-link">
-                                <div class="img-box">
-                                    <img src="images/1.jpg" alt="">
-                                </div>
-                                <div class="content">
-                                    <h3>第一件物品</h3>
-                                    <p>百年老店，全新正品，物美价廉，免费退换，服务周到</p>
-                                    <p>￥: 100元</p>
-                                </div>
-                            </a>
-                        </div>
+
                     </div>    
                 </div>
                 
@@ -99,6 +88,7 @@
                        var h3 = document.createElement("h3");
                        var p1 = document.createElement("p");
                        var p2 = document.createElement("p");
+                       img.src = goods.goodsImage;
                        h3.innerText = goods.goodsName;  /*innerText = text（string 类型）*/
                        p1.innerText = goods.goodsIntro;  /*innerText = text（string 类型）*/
                        p2.innerText = goods.goodsPrice;  /*innerText = text（string 类型）*/
@@ -106,12 +96,12 @@
                        div1.appendChild(a);
                        a.appendChild(div2);
                        a.appendChild(div3);
-                       // div2.appendChild(img);
+                       div2.appendChild(img);
                        div3.appendChild(h3);
                        div3.appendChild(p1);
                        div3.appendChild(p2);
 
-                       div1.after(div1);
+
                        document.getElementById("recommend-items").appendChild(div1);
 
 

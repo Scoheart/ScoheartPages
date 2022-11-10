@@ -10,6 +10,7 @@
     <result property="goodsIntro" column="goods_intro"/>
     <result property="goodsPrice" column="goods_price"/>
     <result property="goodsClass" column="goods_class"/>
+    <result property="goodsImage" column="goods_image"/>
     <result property="goodsInventory" column="goods_inventory"/>
   </resultMap>
 

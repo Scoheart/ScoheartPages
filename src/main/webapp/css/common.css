@@ -154,10 +154,10 @@ nav {
     position: relative;
     display: flex;
     flex-direction: row;
-    flex-grow: 1;
-    flex-shrink: 1; 
+    /*flex-grow: 1;*/
+    /*flex-shrink: 1; */
     max-width: 350px;
-    min-width: 200px;
+    width: 350px;
     height: 150px;
     margin: 10px 0 18px 18px;
     padding: 11px;
